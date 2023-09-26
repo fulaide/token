@@ -23,7 +23,7 @@ registerTransforms(StyleDictionary);
 
 const sd = StyleDictionary.extend({
     "source": [
-        "**/*.tokens.json"
+        "**/*.json"
       ],
       "platforms": {
         "css": {

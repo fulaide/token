@@ -1,15 +1,29 @@
+
 {
-    "source": ["**/*.tokens.json"],
-    "platforms": {
-      "css": {
-        "transformGroup": "tokens-studio",
-        "buildPath": "build/css/",
-        "files": [
-          {
-            "destination": "variables.css",
-            "format": "token-build/variables"
-          }
-        ]
+    "source": [
+        "**/*.tokens.json"
+      ],
+      "platforms": {
+        "css": {
+          "buildPath": "token-build/css/",
+          "prefix": "sd",
+          "transformGroup": "tokens-studio",
+          "files": [
+            {
+              "destination": "variables.css",
+              "format": "css/variables"
+            }
+          ]
+        },
+        "js": {
+          "buildPath": "token-build/js/",
+          "transformGroup": "tokens-studio",
+          "files": [
+            {
+              "destination": "variables.js",
+              "format": "javascript/es6"
+            }
+          ]
+        }
       }
-    }
 }

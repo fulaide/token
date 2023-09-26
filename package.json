@@ -5,13 +5,15 @@
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"transform-token": "node build-output.cjs"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
 		"autoprefixer": "^10.4.16",
 		"postcss": "^8.4.30",
+		"style-dictionary": "^3.8.0",
 		"svelte": "^4.0.5",
 		"tailwindcss": "^3.3.3",
 		"vite": "^4.4.2"
